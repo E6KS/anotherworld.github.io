@@ -4,7 +4,6 @@ $( '.filter-btn' ).click( filterItems );
 function filterItems() {
     let button = this;
     let selector = $( button ).data( 'filter' );
-    console.log( selector ); // For Testing Purposes
     $( '#products div' ).not( selector ).hide(600);
     $( selector ).show(600);
 }
